@@ -1,0 +1,93 @@
+﻿@model IEnumerable<Projeto_final_Ti2_2018.Models.Encomenda>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Cliente.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegiaoEnvio.NomeRegiao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoEnvio.TiposEnvio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataCriacaoEncomenda)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataEnvioEncomenda)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EstadoCompra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustoEnvio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MoradaFaturacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodPostalFaturacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MoradaEntrega)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoPostalEntrega)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cliente.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RegiaoEnvio.NomeRegiao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoEnvio.TiposEnvio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataCriacaoEncomenda)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataEnvioEncomenda)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EstadoCompra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustoEnvio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoradaFaturacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodPostalFaturacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoradaEntrega)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoPostalEntrega)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IDEncomenda }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IDEncomenda }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IDEncomenda })
+        </td>
+    </tr>
+}
+
+</table>

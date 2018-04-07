@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
 namespace Projeto_final_Ti2_2018.Models
 {
-    public class DBSuperGes
+    public class DBSuperGes : DbContext
     {
+
+        
         //**********************************************************
         //  informar a entity framework que as classes abaixo 
         //  descritas devem ser associadas a uma base de dados
@@ -26,7 +29,7 @@ namespace Projeto_final_Ti2_2018.Models
 
         public virtual DbSet<EncomendaProduto> EncomendaProdutos { get; set; }
 
-        public virtual DbSet<TiposEnvio> TiposEnvio { get; set; }
+        public virtual DbSet<TipoEnvio> TiposEnvio { get; set; }
 
         public virtual DbSet<RegiaoEnvio> RegiaoEnvio { get; set; }
 

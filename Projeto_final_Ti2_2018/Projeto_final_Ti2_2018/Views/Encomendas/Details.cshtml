@@ -1,0 +1,106 @@
+﻿@model Projeto_final_Ti2_2018.Models.Encomenda
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Encomenda</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegiaoEnvio.NomeRegiao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegiaoEnvio.NomeRegiao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoEnvio.TiposEnvio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoEnvio.TiposEnvio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataCriacaoEncomenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataCriacaoEncomenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataEnvioEncomenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataEnvioEncomenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstadoCompra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstadoCompra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustoEnvio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustoEnvio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoradaFaturacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoradaFaturacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodPostalFaturacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodPostalFaturacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MoradaEntrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MoradaEntrega)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodigoPostalEntrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodigoPostalEntrega)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDEncomenda }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

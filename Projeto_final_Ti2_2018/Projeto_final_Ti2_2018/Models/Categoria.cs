@@ -10,7 +10,7 @@ namespace Projeto_final_Ti2_2018.Models
     {
         public Categoria()
         {
-            ListaProdutos = new HashSet<Produto>();
+            ListaSubCategorias = new HashSet<SubCategoria>();
         }
         [Key]
         public int IDCategoria { get; set; }
@@ -23,8 +23,7 @@ namespace Projeto_final_Ti2_2018.Models
 
 
         // especificar que um uma categoria está em muitos produtos
-        public virtual ICollection<Produto> ListaProdutos { get; set; }
+        public virtual ICollection<SubCategoria> ListaSubCategorias { get; set; }
     }
 
-}
 }

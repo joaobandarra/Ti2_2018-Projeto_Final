@@ -31,10 +31,6 @@ namespace Projeto_final_Ti2_2018.Models
         [Display(Name = "Descrição: ")]
         public string Descricao { get; set; }
 
-        //[Required]
-        //[StringLength(255)]
-        //[Display(Name = "Categoria: ")]
-        //public string Categoria { get; set; }
 
         [Required]
         [Display(Name = "Preço: ")]
@@ -66,10 +62,10 @@ namespace Projeto_final_Ti2_2018.Models
         //***********************************************************
         // cria um atributo para funcionar como FK, na BD
         // e relaciona-o com o atributo anterior
-        [ForeignKey("Categoria")]
-        public int IDCategoriaFK { get; set; }
+        [ForeignKey("SubCategoria")]
+        public int IDSubCategoriaFK { get; set; }
         // relaciona o objeto Carrinho compras com um objeto carrinho compras produto
-        public virtual Categoria Categoria { get; set; }
+        public virtual SubCategoria SubCategoria { get; set; }
 
         //***********************************************************
 
@@ -89,5 +85,5 @@ namespace Projeto_final_Ti2_2018.Models
 
 
     
-}
+    }
 }

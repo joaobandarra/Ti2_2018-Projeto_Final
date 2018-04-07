@@ -13,22 +13,12 @@ namespace Projeto_final_Ti2_2018.Models
         //  [Display(Name = "ID: ")]
         public int IDcomprasProduto { get; set; }
 
-        //[Required]
-        //[StringLength(255)]
-        //[Display(Name = "Nome do Produto: ")]
-        //public string NomeProduto { set; get; }
+
 
         [Required]
         [Display(Name = "Quantidade: ")]
         public int Quantidade { set; get; }
 
-        //[Required]
-        //[Display(Name = "Preço: ")]
-        //public double Preco { set; get; }
-
-        //[Required]
-        //[Display(Name = "IVA: ")]
-        //public double IVA { get; set; }
 
 
         //***********************************************************
@@ -49,5 +39,4 @@ namespace Projeto_final_Ti2_2018.Models
 
     }
 
-}
 }
