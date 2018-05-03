@@ -10,7 +10,7 @@ namespace Projeto_final_Ti2_2018.Models
     public class CarrinhoComprasProdutos
     {
         [Key]
-        //  [Display(Name = "ID: ")]
+        [Display(Name = "ID: ")]
         public int IDcomprasProduto { get; set; }
 
 

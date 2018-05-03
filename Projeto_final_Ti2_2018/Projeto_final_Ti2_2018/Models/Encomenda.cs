@@ -9,14 +9,6 @@ namespace Projeto_final_Ti2_2018.Models
 {
     public class Encomenda
     {
-
-
-
-
-
-
-
-
         // vai representar os dados da tabela das Encomendas
 
         // criar o construtor desta classe
@@ -29,7 +21,7 @@ namespace Projeto_final_Ti2_2018.Models
 
         [Key]
         [Display(Name = "ID: ")]
-       
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int IDEncomenda { get; set; }
 
         [Required]

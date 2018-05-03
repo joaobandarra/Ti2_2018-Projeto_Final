@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Projeto_final_Ti2_2018.Models
 {
-    public class DBSuperGes : DbContext
+    public class SuperDbGes : DbContext
     {
 
         

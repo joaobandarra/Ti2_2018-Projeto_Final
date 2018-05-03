@@ -136,7 +136,7 @@
     <Compile Include="Models\CarrinhoComprasProdutos.cs" />
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Cliente.cs" />
-    <Compile Include="Models\DBSuperGes.cs" />
+    <Compile Include="Models\SuperDbGes.cs" />
     <Compile Include="Models\Encomenda.cs" />
     <Compile Include="Models\EncomendaProduto.cs" />
     <Compile Include="Models\Produto.cs" />
@@ -146,7 +146,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />

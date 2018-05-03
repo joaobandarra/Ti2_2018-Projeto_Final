@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -18,7 +19,7 @@ namespace Projeto_final_Ti2_2018.Models
         }
         [Key]
         [Display(Name = "ID: ")]
-        // [DatabaseGenerated(DatabaseGeneratedOption.None)] // quando usado, inibe o atributo de ser Auto Number
+        [DatabaseGenerated(DatabaseGeneratedOption.None)] // quando usado, inibe o atributo de ser Auto Number
         public int IDCliente { get; set; }
 
         [Required]
@@ -43,7 +44,7 @@ namespace Projeto_final_Ti2_2018.Models
         public string InfoCartaoCredito { get; set; }
 
         [Required]
-        [StringLength(9), MinLength(9)]
+        //[StringLength(9), MinLength(9)]
         [RegularExpression("[0-9]{9}", ErrorMessage = "Por favor, certifique-se de que o nif tenha apenas 9 caracteres numéricos")]
         [Display(Name = "Numero de Identificação Fiscal: ")]
         public string NIF { get; set; }

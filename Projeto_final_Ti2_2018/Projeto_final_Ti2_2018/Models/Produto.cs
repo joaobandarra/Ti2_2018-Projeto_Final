@@ -26,7 +26,7 @@ namespace Projeto_final_Ti2_2018.Models
         [Display(Name = "Nome: ")]
         public string Nome { get; set; }
 
-        [Required]
+        //[Required]
         [StringLength(255)]
         [Display(Name = "Descrição: ")]
         public string Descricao { get; set; }
@@ -46,7 +46,7 @@ namespace Projeto_final_Ti2_2018.Models
 
         [Required]
         // peso em gramas
-        [Display(Name = "Peso: ")]
+        [Display(Name = "Peso (em gramas ou mililitros): ")]
         public double Peso { get; set; }
 
         [Required]

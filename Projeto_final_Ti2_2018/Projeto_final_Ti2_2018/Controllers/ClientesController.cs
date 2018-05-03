@@ -12,7 +12,7 @@ namespace Projeto_final_Ti2_2018.Controllers
 {
     public class ClientesController : Controller
     {
-        private DBSuperGes db = new DBSuperGes();
+        private SuperDbGes db = new SuperDbGes();
 
         // GET: Clientes
         public ActionResult Index()
