@@ -41,7 +41,7 @@ namespace Projeto_final_Ti2_2018.Models
 
         [Required]
         [Display(Name = "Custo de envio: ")]
-        public double CustoEnvio { get; set; }
+        public decimal CustoEnvio { get; set; }
 
         [Required]
         [StringLength(255)]

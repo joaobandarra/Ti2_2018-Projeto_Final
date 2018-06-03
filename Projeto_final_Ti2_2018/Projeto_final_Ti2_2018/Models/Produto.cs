@@ -23,7 +23,7 @@ namespace Projeto_final_Ti2_2018.Models
 
         [Required]
         [StringLength(255)]
-        [Display(Name = "Nome: ")]
+        [Display(Name = "Designação: ")]
         public string Nome { get; set; }
 
         //[Required]
@@ -34,11 +34,11 @@ namespace Projeto_final_Ti2_2018.Models
 
         [Required]
         [Display(Name = "Preço: ")]
-        public double Preco { get; set; }
+        public decimal Preco { get; set; }
 
         [Required]
         [Display(Name = "IVA: ")]
-        public double IVA { get; set; }
+        public decimal IVA { get; set; }
 
         [StringLength(255)]
         [Display(Name = "Fotografia: ")]
@@ -47,10 +47,9 @@ namespace Projeto_final_Ti2_2018.Models
         [Required]
         // peso em gramas
         [Display(Name = "Peso (em gramas ou mililitros): ")]
-        public double Peso { get; set; }
+        public double? Peso { get; set; }
 
         [Required]
-        // peso em gramas
         [Display(Name = "Stock: ")]
         public int Stock { get; set; }
 

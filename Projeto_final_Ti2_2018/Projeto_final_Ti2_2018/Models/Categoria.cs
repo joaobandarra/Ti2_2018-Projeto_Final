@@ -17,7 +17,7 @@ namespace Projeto_final_Ti2_2018.Models
 
         [Required]
         [StringLength(255)]
-        [Display(Name = "Nome: ")]
+        [Display(Name = "Designação: ")]
         public string Nome { get; set; }
 
 

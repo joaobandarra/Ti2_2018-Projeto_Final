@@ -12,7 +12,7 @@ namespace Projeto_final_Ti2_2018.Models
         // vai representar os dados da tabela dos Clientes
 
         // criar o construtor desta classe
-        // e carregar a lista de Carrinhos de compras
+        // e carregar a lista de encomendas
         public Cliente()
         {
             ListaEncomendas = new HashSet<Encomenda>();
@@ -28,10 +28,7 @@ namespace Projeto_final_Ti2_2018.Models
         [RegularExpression("[A-Z][a-záéíóúàèìòùçâêîôûãõäëïöüñ]+(( |'|-|( (de|das|dos|e|) )| ( d'))[A-Z][a-záéíóúàèìòùçâêîôûãõäëïöüñ]+)*", ErrorMessage = "Por favor, certifique-se de que o nome tem de conter pelo menos duas palavras que têm de começar por maiusculas e não deverá conter algarismos")]
         public string Nome { get; set; }
 
-        [Required]
-        [StringLength(255)]
-        [Display(Name = "Morada: ")]
-        public string Morada { get; set; }
+
 
         [Required]
         [StringLength(255)]
